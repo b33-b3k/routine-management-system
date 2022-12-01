@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,22 +9,34 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dashboard_1.cpp \
     main.cpp \
     mainwindow.cpp \
-    passbackup.cpp \
-    registration.cpp
+    passback.cpp \
+    profile.cpp \
+    registration.cpp \
+    to_do.cpp
 
 HEADERS += \
+    dashboard_1.h \
     mainwindow.h \
-    passbackup.h \
-    registration.h
+    passback.h \
+    profile.h \
+    registration.h \
+    to_do.h
 
 FORMS += \
+    dashboard_1.ui \
     mainwindow.ui \
-    passbackup.ui \
-    registration.ui
+    passback.ui \
+    profile.ui \
+    registration.ui \
+    to_do.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
