@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard_1</class>
+ <widget class="QDialog" name="dashboard_1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1213</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Routine Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(78, 97, 200);</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>160</y>
+     <width>841</width>
+     <height>349</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>841</width>
+     <height>349</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(96, 96, 96);
+selection-background-color: rgb(40, 40, 40);</string>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::DashDotLine</enum>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>167</number>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>43</number>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>841</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_sun">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Sunday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_mon">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Monday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_tue">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tuesday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_wed">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Wednesday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_thu">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Thursday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_friday">
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Friday</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="comboBox_chooseCourse">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>20</y>
+     <width>80</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+   
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Choose Routine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Computer I</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Civil I</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_updateTable">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>20</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    background-color: white;
+    border-style: outset;
+    
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    
+    padding: 6px;
+
+QPushButton#evilButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Update Table</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
