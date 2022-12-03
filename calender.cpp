@@ -6,6 +6,8 @@ Calender::Calender(QWidget *parent) :
     ui(new Ui::Calender)
 {
     ui->setupUi(this);
+    setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
+
 }
 
 Calender::~Calender()

@@ -14,15 +14,15 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:#384696
+   <string notr="true">background-color:#3F72AF
 </string>
   </property>
   <widget class="QLabel" name="label_name">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>120</x>
      <y>20</y>
-     <width>251</width>
+     <width>231</width>
      <height>31</height>
     </rect>
    </property>
@@ -35,8 +35,10 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color:white;
+color: black;
+text-align:center;
+</string>
    </property>
    <property name="text">
     <string/>

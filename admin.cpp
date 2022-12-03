@@ -105,23 +105,17 @@ void admin::on_comboBox_2_currentIndexChanged(int index) //day
         value_day=1;
         value= value_routine * value_day * value_time;
 
-
-
     int time_in_hrs = id % 100; //time
     id = index * 100;
     id += time_in_hrs;
      display();
     }
 }
-
-
 void admin::on_comboBox_3_currentIndexChanged(int index) //time
 {
     if(index){
          value_time=1;
         value= value_routine * value_day * value_time;
-
-
 
     int day_number = id / 100; //day
     id = 8 + index;
@@ -129,8 +123,6 @@ void admin::on_comboBox_3_currentIndexChanged(int index) //time
     display();
     }
 }
-
-
 /*
 #@@
 DTT

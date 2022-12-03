@@ -3,9 +3,12 @@
 
 aboutpage::aboutpage(QWidget *parent) :
     QDialog(parent),
+
     ui(new Ui::aboutpage)
 {
     ui->setupUi(this);
+    setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
+
 }
 
 

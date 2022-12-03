@@ -7,6 +7,8 @@ To_Do::To_Do(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::To_Do)
 {
+    setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
+
     ui->setupUi(this);
     ui->lineEdit_toDo1->setPlaceholderText("To-Do");
     ui->lineEdit_toDo2->setPlaceholderText("To-Do");

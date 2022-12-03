@@ -14,25 +14,27 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:#4E61C8</string>
+   <string notr="true">background-color:#4E61C8;
+
+</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>0</y>
-     <width>101</width>
-     <height>81</height>
+     <y>10</y>
+     <width>131</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>28</pointsize>
+     <pointsize>-1</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-color: white
+    <string notr="true">font-size:60px;
+color: white;
 
 </string>
    </property>
@@ -43,10 +45,10 @@ color: white
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>170</y>
-     <width>601</width>
-     <height>141</height>
+     <x>280</x>
+     <y>200</y>
+     <width>391</width>
+     <height>171</height>
     </rect>
    </property>
    <property name="font">
@@ -57,10 +59,12 @@ color: white
    <property name="styleSheet">
     <string notr="true">background-color:white;
 color: rgb(78, 97, 200);
-border-radius:60px;</string>
+border-radius:50px;
+padding:auto;</string>
    </property>
    <property name="text">
-    <string>Contact to your administration</string>
+    <string>Contact to your
+ administration</string>
    </property>
   </widget>
  </widget>

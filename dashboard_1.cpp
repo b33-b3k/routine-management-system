@@ -12,6 +12,7 @@ dashboard_1::dashboard_1(QWidget *parent) :
     ui(new Ui::dashboard_1)
 {
     ui->setupUi(this);
+
     setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
     loadTable("Sunday");
     ui->comboBox_chooseCourse->hide();
@@ -27,12 +28,12 @@ dashboard_1::dashboard_1(QWidget *parent) :
     QSqlQuery qry1;
     qry1.prepare("select * from Info where Email='"+email+"' and checkAdmin='1'");
     if(qry1.exec())
-    {       int count=0;
+    {
          while(qry1.next())
          {
-             count++;
+             isAdmin++;
          }
-         if (count==1)
+         if (isAdmin==1)
          {
              admin();
          }

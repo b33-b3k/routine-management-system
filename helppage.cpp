@@ -6,6 +6,8 @@ helppage::helppage(QWidget *parent) :
     ui(new Ui::helppage)
 {
     ui->setupUi(this);
+    setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
+
 }
 
 helppage::~helppage()

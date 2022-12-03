@@ -61,7 +61,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:100px;
+    <string notr="true">border-radius:50;
 </string>
    </property>
    <property name="text">

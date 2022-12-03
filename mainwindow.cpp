@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
     ui->radioButton_student->setChecked(true);
 
@@ -49,7 +50,7 @@ void MainWindow::on_pushButton_clicked()
 
     connOpen();
     QSqlQuery qry;
-qry.prepare("select * from Info where Email='"+email+"' and Password ='"+password+"'");
+qry.prepare("select * from Info where Email='"+email+"' and Password ='"+password+"'and checkAdmin='0'");
     if (qry.exec())
     {
         int count=0;
