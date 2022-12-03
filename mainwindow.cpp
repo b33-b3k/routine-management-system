@@ -94,8 +94,10 @@ qry.prepare("select * from Info where Email='"+email+"' and Password ='"+passwor
             profile profile;                // opening profile window
             profile.setModal (true);
             profile.exec();
+
     }
-   else QMessageBox::warning(this,"Role","Please select student");
+        if (count<1)
+        QMessageBox::warning(this,"Login Failed!","Entered details does not match!");
    }
 }
 }
@@ -129,8 +131,6 @@ void MainWindow::on_commandLinkButton_2_clicked()
 
 
 
-
-
 extern int count;
 void MainWindow::on_pushButton_closeEye_clicked()
 {
@@ -147,6 +147,9 @@ void MainWindow::on_pushButton_closeEye_clicked()
     }
 }
 
+//print
+
+
 
 
 
@@ -160,5 +163,7 @@ void MainWindow::on_commandLinkButton_clicked()
     connClose();
 
 }
+
+
 
 

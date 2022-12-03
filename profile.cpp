@@ -1,11 +1,18 @@
 #include "profile.h"
 #include "dashboard_1.h"
+
+#include "helppage.h"
 #include "to_do.h"
 #include "ui_profile.h"
 #include "dashboard_1.h"
 #include <QMessageBox>
+#include <calender.h>
+#include <aboutpage.h>
+#include <ui_mainwindow.h>
+#include <helppage.h>
+#include "mainwindow.h"
 
-
+MainWindow *mp;
 extern QString email;
 extern QString password;
 extern QString course;
@@ -20,6 +27,8 @@ profile::profile(QWidget *parent) :
 setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint );
             ui->groupBox_editProfile_2->hide();
             ui->groupBox_editProfile->hide();
+            ui->groupBox->hide();
+
 
             conn.connOpen();
     if(conn.connOpen())
@@ -228,6 +237,81 @@ void profile::on_pushButton_ToDo_clicked()
         To_Do To_Do;
         To_Do.setModal (true);
         To_Do.exec();
+
+}
+
+
+void profile::on_pushButton_calender_clicked()
+{
+    Calender calender;
+    calender.setModal(true);
+    calender.exec();
+
+}
+
+
+void profile::on_pushButton_about_clicked()
+{
+    aboutpage about;
+    about.setModal(true);
+    about.exec();
+
+}
+
+
+
+
+
+void profile::on_pushButton_help_clicked()
+{
+    helppage Help;
+    Help.setModal(true);
+    Help.exec();
+
+}
+
+
+
+
+int Count=0;
+void profile::on_pushButton_clicked()
+{
+
+
+    {
+
+        if (Count==0)
+        {
+            ui->groupBox->show();
+
+            ui->pushButton_logout->show();
+            ui->pushButton_EditProfile->show();
+            ui->pushButton_editProfile_2->show();
+            Count=1;
+            }
+        else {
+            ui->groupBox->hide();
+
+
+            ui->pushButton_logout->hide();
+            ui->pushButton_EditProfile->hide();
+            ui->pushButton_editProfile_2->hide();
+            Count=0;
+        }
+
+    }
+}
+
+
+void profile::on_pushButton_logout_clicked()
+{
+
+
+
+        hide();
+        mp= new MainWindow();
+        mp->show();
+
 
 }
 

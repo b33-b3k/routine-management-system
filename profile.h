@@ -58,6 +58,14 @@ private slots:
 
     void on_pushButton_ToDo_clicked();
 
+    void on_pushButton_calender_clicked();
+
+    void on_pushButton_about_clicked();
+
+    void on_pushButton_help_clicked();
+
+    void on_pushButton_logout_clicked();
+
 private:
     Ui::profile *ui;
     QSqlDatabase mydb;

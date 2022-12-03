@@ -71,3 +71,87 @@ void To_Do::on_pushButton_clicked()
         QMessageBox::information(this,"To-Do","DB not connected");
     }}
 
+
+void To_Do::on_checkBox_clicked()
+{
+
+    if( ui->checkBox->isChecked())
+     {
+     QSqlQuery qry;
+     qry.prepare("Update Info set ToDo1='' where Email=:x");
+     qry.bindValue(":x",email);
+     qry.exec();
+     ui->lineEdit_toDo1->setText(qry.value(6).toString());
+ }
+
+}
+
+
+void To_Do::on_checkBox_2_clicked()
+{
+   if( ui->checkBox_2->isChecked())
+    {
+    QSqlQuery qry;
+    qry.prepare("Update Info set ToDo2='' where Email=:x");
+    qry.bindValue(":x",email);
+    qry.exec();
+    ui->lineEdit_toDo2->setText(qry.value(7).toString());
+}
+
+
+}
+
+
+void To_Do::on_checkBox_3_clicked()
+{
+    if( ui->checkBox_3->isChecked())
+     {
+     QSqlQuery qry;
+     qry.prepare("Update Info set ToDo3='' where Email=:x");
+     qry.bindValue(":x",email);
+     qry.exec();
+     ui->lineEdit_toDo3->setText(qry.value(8).toString());
+ }
+}
+
+
+void To_Do::on_checkBox_4_clicked()
+{
+    if( ui->checkBox_4->isChecked())
+     {
+     QSqlQuery qry;
+     qry.prepare("Update Info set ToDo4='' where Email=:x");
+     qry.bindValue(":x",email);
+     qry.exec();
+     ui->lineEdit_toDo4->setText(qry.value(9).toString());
+ }
+}
+
+
+void To_Do::on_checkBox_5_clicked()
+{
+    if( ui->checkBox_5->isChecked())
+     {
+     QSqlQuery qry;
+     qry.prepare("Update Info set ToDo5='' where Email=:x");
+     qry.bindValue(":x",email);
+     qry.exec();
+     ui->lineEdit_toDo5->setText(qry.value(10).toString());
+ }
+}
+
+
+void To_Do::on_checkBox_6_clicked()
+{
+    if( ui->checkBox_6->isChecked())
+     {
+     QSqlQuery qry;
+     qry.prepare("Update Info set ToDo6='' where Email=:x");
+     qry.bindValue(":x",email);
+     qry.exec();
+     ui->lineEdit_toDo6->setText(qry.value(11).toString());
+ }}
+
+
+
+

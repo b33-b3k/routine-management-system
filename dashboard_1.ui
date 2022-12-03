@@ -14,7 +14,7 @@
    <string>Routine Management System</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(78, 97, 200);</string>
+   <string notr="true">background-color:#3F72AF</string>
   </property>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
@@ -49,13 +49,16 @@ selection-background-color: rgb(40, 40, 40);</string>
     <enum>Qt::DashDotLine</enum>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>167</number>
+    <number>205</number>
    </attribute>
    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
     <bool>false</bool>
    </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
    <attribute name="verticalHeaderDefaultSectionSize">
-    <number>43</number>
+    <number>46</number>
    </attribute>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -213,7 +216,7 @@ QPushButton#evilButton:pressed {
     <rect>
      <x>220</x>
      <y>20</y>
-     <width>80</width>
+     <width>141</width>
      <height>26</height>
     </rect>
    </property>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="enabled">
     <bool>true</bool>
@@ -270,7 +273,7 @@ right: -37.9%;
 top: 0%;
 bottom: 9.62%;
 
-background: #4E61C8;</string>
+background: #112D4E;</string>
    </property>
    <property name="text">
     <string/>

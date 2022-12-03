@@ -5,6 +5,10 @@
 #include <QtSql>
 #include<QtDebug>
 #include<QFileInfo>
+#include<QPrinter>
+#include<QPrintDialog>
+#include<QTextDocument>
+#include<QPainter>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,6 +19,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+
     QSqlDatabase mydb;
     void connClose()
     {
@@ -42,6 +47,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
+
+
 private slots:
     void on_pushButton_clicked();
 
@@ -57,6 +65,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+
+
 
 };
 #endif // MAINWINDOW_H

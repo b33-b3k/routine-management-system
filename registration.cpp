@@ -2,6 +2,7 @@
 #include "ui_registration.h"
 #include <QMessageBox>
 
+
 QString email;
 QString name;
 QString course;
@@ -26,6 +27,8 @@ registration::registration(QWidget *parent) :
        ui->label_2->setText("Failed to open db");
    else
        ui->label_2->setText("Register Here");
+
+
 }
 
 registration::~registration()
@@ -126,4 +129,5 @@ void registration::on_pushButton_eye_2_clicked()
         count=0;
     }
 }
+
 

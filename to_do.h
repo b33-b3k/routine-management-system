@@ -19,6 +19,22 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_checkBox_clicked();
+
+    void on_checkBox_2_clicked();
+
+    void on_checkBox_3_clicked();
+
+    void on_checkBox_4_clicked();
+
+    void on_checkBox_5_clicked();
+
+    void on_checkBox_6_clicked();
+
+    void on_checkBox_5_clicked(bool checked);
+
+    void on_checkBox_stateChanged(int arg1);
+
 private:
     Ui::To_Do *ui;
 };
